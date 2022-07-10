@@ -321,3 +321,74 @@ h1 {
     line-height: 30px;
     font-size: 15px;
 }
+
+
+
+/* features */
+.bg{
+  background-color: #047aed;
+}
+.FeaOne, .FeaTwo ,.FeaThree{
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+  
+}
+.FeaOne{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+.FeaOne img{
+  width: 200px;
+}
+
+.Fealeft h2{
+  font-size: 55px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.FeaTwo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.FeRight img{
+  width: 300px;
+}
+.FeLeft h2{
+font-size: 40px;
+font-weight: 300;
+
+
+}
+.FeLeft p{
+  text-align: justify;
+  line-height: 30px;
+  letter-spacing: 1px;
+
+}
+.FeaThree{
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 100px;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 10px 10px 35px -3px rgba(0, 0, 0, 0.151);
+}
+.FeaThree i{
+  font-size: 40px;
+}
+.FeaThree p{
+  text-align: justify;
+  font-size: 15px;
+}
