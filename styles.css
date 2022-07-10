@@ -267,13 +267,11 @@ h1 {
   padding: 10px;
   background-color: #fff;
   transition: all 0.5s ease-in;
-
 }
 .imgicon:hover {
   background-color: #f7d5d5da;
   position: relative;
   top: -25px;
-
 }
 
 .imgicon span {
@@ -281,61 +279,60 @@ h1 {
   font-weight: 900;
   margin-bottom: 10px;
 }
-.footer{
-    background-color: #001a40;
-
+.footer {
+  background-color: #001a40;
 }
-.foot{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    max-width: 1100px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
-    color: #fff;
-}
-.foot span{
-    margin: 10px 0;
-}
-.Ficons a{
-    margin: 0 10px;
-    font-weight: 400;
-    color: #fff;
-    
-}
-.Ficons a i{
-    font-size: 30px;
-}
-.Flinks{
-    display: flex;
-    flex-direction: column;
-
-}
-.Flinks a{
-    color: #fff;
-    text-decoration: none;
-    line-height: 30px;
-    font-size: 15px;
-}
-
-
-
-/* features */
-.bg{
-  background-color: #047aed;
-}
-.FeaOne, .FeaTwo ,.FeaThree{
+.foot {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
   max-width: 1100px;
   margin: 0 auto;
   overflow: auto;
   padding: 0 40px;
-  
+  color: #fff;
 }
-.FeaOne{
+.foot span {
+  margin: 10px 0;
+}
+.Ficons a {
+  margin: 0 10px;
+  font-weight: 400;
+  color: #fff;
+}
+.Ficons a i {
+  font-size: 30px;
+}
+.Flinks {
+  display: flex;
+  flex-direction: column;
+}
+.Flinks a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 15px;
+}
+
+/* features */
+.bg,
+.DBg {
+  background-color: #047aed;
+}
+.FeaOne,
+.FeaTwo,
+.FeaThree,
+.Doctop,
+.MainFlex {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+.FeaOne {
   display: flex;
   position: relative;
   flex-direction: row;
@@ -345,38 +342,35 @@ h1 {
   padding-bottom: 20px;
   color: #fff;
 }
-.FeaOne img{
+.FeaOne img {
   width: 200px;
 }
 
-.Fealeft h2{
+.Fealeft h2 {
   font-size: 55px;
   font-weight: 300;
   letter-spacing: 1px;
 }
 
-.FeaTwo{
+.FeaTwo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
 }
-.FeRight img{
+.FeRight img {
   width: 300px;
 }
-.FeLeft h2{
-font-size: 40px;
-font-weight: 300;
-
-
+.FeLeft h2 {
+  font-size: 40px;
+  font-weight: 300;
 }
-.FeLeft p{
+.FeLeft p {
   text-align: justify;
   line-height: 30px;
   letter-spacing: 1px;
-
 }
-.FeaThree{
+.FeaThree {
   display: flex;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -385,10 +379,124 @@ font-weight: 300;
   justify-content: space-around;
   box-shadow: 10px 10px 35px -3px rgba(0, 0, 0, 0.151);
 }
-.FeaThree i{
+.FeaThree i {
   font-size: 40px;
 }
-.FeaThree p{
+.FeaThree p {
   text-align: justify;
   font-size: 15px;
+}
+
+.Doctop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  color: #fff;
+}
+.DocLeft h2 {
+  font-size: 60px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+.DocRight img {
+  width: 200px;
+}
+.MainFlex {
+  display: flex;
+  margin-top: 100px;
+}
+.MainLeft {
+  margin-right: 50px;
+}
+.MainLeft h3 {
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 8px;
+}
+.MainLeft ul {
+  list-style: none;
+}
+.MainLeft ul li {
+  font-size: 17px;
+  padding: 8px;
+  width: 250px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.26);
+}
+.MainLeft ul li:hover {
+  color: #224fed;
+  cursor: pointer;
+}
+
+.MainIntro h3 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.MainIntro p {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+#strong {
+  background-color: #00cb60;
+  color: #fff;
+  width: 700px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.lorem h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#CLI {
+  background-color: #224fed;
+  border: none;
+  width: 125px;
+  height: 40px;
+  margin: 15px 0 15px 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: lighter;
+}
+#CLI:hover {
+  border: 2px solid rgb(255, 255, 255);
+}
+.req h3 {
+  font-weight: 600;
+  margin: 10px 0 10px 0;
+}
+.req p {
+  font-size: 15px;
+  margin: 10px 0 10px 0;
+  font-weight: 500;
+}
+
+.install {
+  margin: 40px 0 40px 0;
+}
+.install h3 {
+  letter-spacing: 1px;
+}
+
+.install pre {
+  background-color: #333;
+  color: #fff;
+  width: 700px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 30px;
+  margin-top: 10px;
 }
