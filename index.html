@@ -26,13 +26,13 @@
             <div id="links">
                 <ul>
                     <li>
-                        <a href="">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="">Features</a>
+                        <a href="Features.html">Features</a>
                     </li>
                     <li>
-                        <a href="">Docs</a>
+                        <a href="Docs.html">Docs</a>
                     </li>
                 </ul>
             </div>
@@ -51,16 +51,16 @@
                     <p>Deploy web apps of all kinds, from large scale enterprise APIs to static website for
                         individuals. Fill out the form to try a demo of our platform</p>
                         <br>
-                        <button id="FirstReadMore">Read More</button>
+                        <a href="Docs.html"><button id="FirstReadMore">Read More</button></a>
                     </div>
-                    <div class="form">
+                    <div class="form" id="theForm">
                         <h3>Request a Demo</h3>
                         <form action="POST" id="requestDemo">
-                            <input type="text" placeholder="Name">
-                            <input type="text" placeholder="Company Name">
-                    <input type="email" placeholder="Email">
+                            <input type="text"  placeholder="Name" required>
+                            <input type="text"  placeholder="Company Name" required>
+                    <input type="email"  placeholder="Email" required>
+                    <button id="send">Send</button>
                 </form>
-                <button id="send">Send</button>
                 
             </div>
             
@@ -79,17 +79,17 @@
             <div class="IconContainer">
                 <div class="count">
                     <i class="fa fa-server" aria-hidden="true"></i>
-                    <div class="counter" data-target="4000">4000</div>
+                    <div class="counter" data-target="10349405"></div>
                     <span>Deployments</span>
                 </div>
                 <div class="count" id="middle">
                     <i class="fa fa-upload" aria-hidden="true"></i>
-                    <div class="counter" data-target="4000">4000</div>
+                    <div class="counter" data-target="1020"></div><div>TB</div>
                     <span>Published</span>
                 </div>
                 <div class="count">
                     <i class='fas fa-project-diagram'></i>
-                    <div class="counter" data-target="4000">4000</div>
+                    <div class="counter" data-target="2343265"></div>
                     <span>Projects</span>
                 </div>
             </div>
@@ -170,20 +170,21 @@
             <span>Copyright @ 2020</span>
         </div>
         <div class="Flinks">
-            <a href="">Home</a>
-            <a href="">Features</a>
-            <a href="">Docs</a>
+            <a href="index.html">Home</a>
+            <a href="Features.html">Features</a>
+            <a href="Docs.html">Docs</a>
         </div>
         <div class="Ficons">
-          <a href=""> <i class="fa fa-github"></i></a> 
-          <a href=""> <i class="fa fa-facebook-square" aria-hidden="true"></i></a> 
-          <a href="">   <i class="fa fa-instagram" aria-hidden="true"></i></a> 
-          <a href="">   <i class="fa fa-twitter" aria-hidden="true"></i></a> 
+          <a href="https://github.com/"> <i class="fa fa-github"></i></a> 
+          <a href="https://www.facebook.com/"> <i class="fa fa-facebook-square" aria-hidden="true"></i></a> 
+          <a href="https://www.instagram.com/?hl=en">   <i class="fa fa-instagram" aria-hidden="true"></i></a> 
+          <a href="https://twitter.com/">   <i class="fa fa-twitter" aria-hidden="true"></i></a> 
         </div>
     </div>
     </footer>
 
-<script src="App.js"></script>
+    <script src="App.js"></script>
+
 </body>
 
 </html>

@@ -18,9 +18,10 @@ body {
   color: #fff;
   max-width: 1100px;
   margin: 0 auto;
-  overflow: auto;
+  overflow: hidden;
   padding: 0 40px;
 }
+
 h1 {
   font-weight: 300;
   line-height: 1.2;
@@ -72,13 +73,17 @@ h1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 30px;
-
+  transition: all 1s ease-in-out;
   max-width: 1100px;
   height: auto;
   margin: 0px auto;
-  overflow: auto;
+  overflow: hidden;
   padding: 90px 40px 0 40px;
 }
+/* @media (max-width: 900px) {
+ 
+} */
+
 .info h2 {
   font-size: 35px;
   font-weight: 400;
@@ -144,17 +149,16 @@ h1 {
 }
 
 .SecondSection {
-  position: relative;
-  max-width: 1100px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
   text-align: center;
-  height: auto;
+  max-width: 1100px;
   margin: 0px auto;
-  overflow: auto;
+  overflow: hidden;
   padding: 90px 40px 0 40px;
 }
 #welcome p {
@@ -196,7 +200,7 @@ h1 {
   height: auto;
   max-width: 1100px;
   margin: 0px auto;
-  overflow: auto;
+  overflow: hidden;
   padding: 10px 40px 10px 40px;
 }
 
@@ -254,10 +258,12 @@ h1 {
 .langicons {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   text-align: center;
   margin-top: 50px;
+  flex-wrap: wrap;
+  align-content: center;
 }
 .imgicon {
   display: flex;
@@ -266,7 +272,7 @@ h1 {
   margin: 25px;
   padding: 10px;
   background-color: #fff;
-  transition: all 0.5s ease-in;
+  transition: all 1s ease-out;
 }
 .imgicon:hover {
   background-color: #f7d5d5da;
@@ -329,11 +335,12 @@ h1 {
 .MainFlex {
   max-width: 1100px;
   margin: 0 auto;
-  overflow: auto;
+  overflow: hidden;
   padding: 0 40px;
 }
 .FeaOne {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   flex-direction: row;
   justify-content: space-between;
@@ -354,6 +361,7 @@ h1 {
 
 .FeaTwo {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
@@ -372,6 +380,7 @@ h1 {
 }
 .FeaThree {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 50px;
   margin-bottom: 50px;
   height: 100px;
@@ -389,6 +398,7 @@ h1 {
 
 .Doctop {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding-top: 30px;
@@ -408,6 +418,7 @@ h1 {
 .MainFlex {
   display: flex;
   margin-top: 100px;
+  
 }
 .MainLeft {
   margin-right: 50px;
@@ -499,4 +510,101 @@ h1 {
   justify-content: start;
   padding-left: 30px;
   margin-top: 10px;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .home {
+    justify-content: center;
+  }
+  .showcase {
+    grid-template-columns: repeat(1, 0.5fr);
+    text-align: center;
+    justify-content: center;
+  }
+ 
+  #requestDemo input {
+    width: auto;
+  }
+  #theForm {
+    width: 276px;
+    box-shadow: 10px 10px 78px -3px rgba(0, 0, 0, 0.233);
+  }
+  #theForm input{
+    width: auto;
+  }
+  .SecondSection{
+    margin-top: 300px;
+  }
+  .IconContainer,.ThirdInfo{
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center
+  }
+  .infoLeft h2{
+    font-size: 25px;
+  }
+  
+  #SecondReadMore{
+    width: 85px;
+    height: 37px;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+  }
+  #divImg{
+    margin: 25px 0 25px 0;
+    height: 220px;
+  }
+  .foot{
+    justify-content: start
+  }
+  .FeaOne,.FeaTwo {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .FeaOne img {
+    width: 150px;
+    margin: 60px 0 21px 0;
+  }
+  .Fealeft h2 {
+    font-size: 45px;
+  
+  }
+
+  .FeRight img {
+    width: 220px;
+    margin: 40px 0 25px 0;
+  }
+  .FeLeft p, .FeaThree p {
+    text-align: center;
+  }
+  .FeLeft h2 {
+    font-size: 37px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .FeaThree{
+    height: 200px;
+  }
+  .MainFlex{
+  flex-wrap: wrap;
+
+  }
+  .MainIntro h3{
+   margin: 30px 0 22px 0;
+  }
+  .MainIntro p, .lorem p{
+    padding-right: 10px;
+  }
+  .Doctop{
+    
+    text-align: center;
+    justify-content: center;
+  }
+#strong, .install pre{
+  width: 240px;
+  padding: 15px;
+}
+
 }
